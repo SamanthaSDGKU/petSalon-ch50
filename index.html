@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles/main.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kalnia+Glaze:wght@100..700&family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&family=Wittgenstein:ital,wght@0,400..900;1,400..900&display=swap"
+      rel="stylesheet"
+    />
+    <title>Fashion Pet</title>
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container">
+        <h1>The Fashion Pet</h1>
+        <nav>
+          <a href="index.html">Home</a><a href="./register.html">Register</a><a href=""></a>
+        </nav>
+      </div>
+
+      <div class="container">
+        <div>
+          <p class="main-text">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel,
+            minima!
+          </p>
+          <p class="secondary-text">
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Amet,
+            officia! Facilis omnis quis quam fugit, a illum numquam iure quos.
+          </p>
+
+          <p class="normal-text">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi quae
+            ipsa eum, dolorem magni, incidunt fuga repellendus rem quo quas
+            nulla alias eveniet deserunt, provident maxime illum quod quaerat
+            asperiores?
+          </p>
+
+          <p class="normal-text">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste,
+            itaque!
+          </p>
+
+          <a href="#" class="btn">Book an appointment</a>
+
+          <div class="btn-flex-count">
+           <div>
+            <button class="btn-count" onclick="petCount();">Show pet queue</button>
+          </div>
+          <div id="btn-count" class="card-button-count"></div>
+          <div>
+            <button class="btn-names" onclick="petNames();">Show pet names:</button>
+          </div>
+          <div id="btn-name" class="card-button"></div> 
+          </div>
+          
+
+
+
+        </div>
+        <div>
+          <img src="./img/puppy.png" alt="puppy" />
+        </div>
+      </div>
+    </header>
+    <div id="year"></div>
+
+    <script src="./scripts/script.js"></script>
+  </body>
+</html>
