@@ -15,21 +15,35 @@
 </head>
 <body>
 
-    <h2>Services</h2>
+    <main class="container">
+        <h2 class="text-center">Register a new service</h2>
+        <div class="form-container">
+          <!-- Description Input -->
+         
+          <div class="mb-4">          
+            <label class="form-label" for="">Description*</label>
+            <input class="form-control" id="txtTitle" type="text" />
+            <small class="titleValidationMsg">This is a required field</small>
+          </div>
+  
+          <!-- Price input -->
+          <div class="">
+            <label class="form-label" for="">Price*</label>
+            <input class="form-control" id="txtPrice" type="number" />
+            <small class="priceValidationMsg">This is a required field</small>
+          </div>
 
-    <div>
-        <div>
-            <label>Title:</label>
-            <input type="text">
+          
+  
+          <div>
+            <!-- Btn Register -->
+            <button onclick="register()" class="btn btn-dark mt-4">Register</button>
+          </div>
         </div>
-        <div>
-            <label>Price:</label>
-            <input type="number">
-        </div>
-        <button class="btn btn-primary" id="btnRegister">Register</button>
-    </div>
+      </main>
     
     <script src="./plugins/jQuery3.7.js"></script>
+    <script src="./scripts/storeManager.js"></script>
     <script src="./scripts/services.js"></script>
 </body>
 </html>

@@ -48,6 +48,20 @@ function deletePet(id){
     displayRow();//refresh the display
 }
 
+function getServices(){
+    //get the list from the LS
+    let servicesList=read();
+    console.log(servicesList);
+    let option;
+    //travel the array of servicesList **for (display.js)
+    for(let i=0;i<servicesList.length;i++){
+        let service=servicesList[i];
+        //create the HTML <option>
+        option+=`<option value="">${service.title}</option>`;
+    }
+    $("#txtServices").append(option);
+    
+}
 function init(){
     
     let pet1 = new Pet("Scooby",10,"Male","Husky");//my first obj
